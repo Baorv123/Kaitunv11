@@ -1029,11 +1029,11 @@ tbl3.tpbypass = function(arg, arg2)
 		return
 	end
 
-	if CaculateDistance(flag) >= 5000 then
-		if BypassTP(flag.Position) then
-			return
-		end
-	end
+	-- if CaculateDistance(flag) >= 5000 then
+--     if BypassTP(flag.Position) then
+--         return
+--     end
+-- end
 
 	for _, descendant in ipairs(game.Players.LocalPlayer.Character:GetDescendants()) do
 		if descendant:IsA("BasePart") then
