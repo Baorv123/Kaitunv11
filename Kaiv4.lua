@@ -1069,7 +1069,7 @@ tbl3.tpbypass = function(arg, arg2)
 
 	local cframe = CFrame.new(flag.Position)
 	local linear = Enum.EasingStyle.Linear
-	TweenInstance = Services.TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(CaculateDistance(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame, cframe) / 280, linear), { CFrame = cframe })
+	TweenInstance = Services.TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(CaculateDistance(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame, cframe) / 180, linear), { CFrame = cframe })
 	TweenInstance:Play()
 end
 
