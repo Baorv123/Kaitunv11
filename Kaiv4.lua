@@ -725,7 +725,7 @@ local tbl3 = {
 
 		local localPlayer3 = game:GetService("Players").LocalPlayer
 		local humanoidRootPart = (localPlayer3.Character or localPlayer3.CharacterAdded:Wait()):WaitForChild("HumanoidRootPart")
-		local tween = TweenService:Create(humanoidRootPart, TweenInfo.new((humanoidRootPart.Position - arg2.Position).Magnitude / 280, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), { CFrame = arg2 })
+		local tween = TweenService:Create(humanoidRootPart, TweenInfo.new((humanoidRootPart.Position - arg2.Position).Magnitude / 180, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), { CFrame = arg2 })
 		tween:Play()
 		return tween
 	end,
